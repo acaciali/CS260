@@ -1,0 +1,76 @@
+.navbar {
+  font-family: 'Amatic SC', cursive;
+/*  height: 100px; */
+  font-size: 40px;
+  background-color: #D9B9A7 !important; /*pink*/
+  overflow: auto;
+}
+
+body {
+  background-color: #DBD9CE;
+}
+
+.week {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.day {
+  flex: 100%;
+  max-width: 100%;
+  border-radius: 25px;
+  background-color: white;
+  border: 4px solid #7B8C3B; /*green*/
+
+  margin: 4px;
+  /*
+  width: 900px;
+  display: flex;
+  justify-content: flex-start; */
+}
+
+p {
+  margin-top: 4px;
+  color: #A83652;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 20px;
+  text-align: center;
+}
+
+.footer {
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  display: flex;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  background-color: #EEE7D4; /*beige*/
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Tablet Styles */
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+  .day {
+    flex: 33.33%;
+    max-width: 33.33%;
+  }
+  .footer {
+    position: fixed;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .day{
+    flex: 15%;
+    max-width: 15%;
+  }
+  .footer {
+    position: fixed;
+  }
+}
